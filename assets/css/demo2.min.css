@@ -16835,7 +16835,7 @@ a{
 }
 
 .quotes_section{
-  background: url(/assets/images/wave.png);
+  background: url(../images/wave.png);
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
