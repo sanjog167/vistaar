@@ -91,7 +91,7 @@ body {
 }
 .swiper-button-next::before,
 .swiper-button-prev::before {
-  font-family: "Wolmart";
+  font-family: "";
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -1227,7 +1227,7 @@ blockquote {
   left: 0;
   top: 1px;
   content: "";
-  font-family: "wolmart";
+  font-family: "";
   font-weight: 600;
   font-size: 1.3rem;
 }
@@ -4596,7 +4596,7 @@ blockquote {
 }
 .post-mask .post-comment::before {
   content: "";
-  font-family: "wolmart";
+  font-family: "";
   position: absolute;
   font-size: 1.8rem;
   left: 0;
@@ -4709,13 +4709,15 @@ blockquote {
   opacity: 0.8;
 }
 .breadcrumb li:not(:last-child)::after {
-  content: "";
-  position: relative;
-  display: inline-block;
-  margin-left: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "wolmart";
+
+    display: inline-block;
+    margin-left: 6px;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    font-weight: 900;
+    transform: rotate(-90deg);
+    margin-top: -4px;
 }
 .breadcrumb li:not(:last-child):hover {
   opacity: 1;
@@ -5586,7 +5588,7 @@ blockquote {
 .category-content .category-list li::before {
   content: "";
   color: inherit;
-  font-family: "wolmart";
+  font-family: "";
   font-size: 1.3rem;
   margin-right: 0.3rem;
   margin-left: -0.3rem;
@@ -6369,19 +6371,19 @@ blockquote {
   }
 }
 /*----------------------------------------
-    Wolmart Font icon
+     Font icon
 -----------------------------------------*/
 @font-face {
-  font-family: "wolmart";
-  src: url("../fonts/wolmart87d5.eot?png09e");
-  src: url("../fonts/wolmart87d5.woff?png09e") format("woff"), url("../fonts/wolmart87d5.eot?png09e#iefix") format("embedded-opentype"), url("../fonts/wolmart87d5.ttf?png09e") format("truetype"), url("../fonts/wolmart87d5.svg?png09e#wolmart") format("svg");
+  font-family: "";
+  src: url("../fonts/87d5.eot?png09e");
+  src: url("../fonts/87d5.woff?png09e") format("woff"), url("../fonts/87d5.eot?png09e#iefix") format("embedded-opentype"), url("../fonts/87d5.ttf?png09e") format("truetype"), url("../fonts/87d5.svg?png09e#") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 [class^=w-icon-], [class*=" w-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "wolmart" !important;
+  font-family: "" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -6461,9 +6463,6 @@ blockquote {
   content: "";
 }
 
-.w-icon-hamburger:before {
-  content: "";
-}
 
 .w-icon-star-square-full:before {
   content: "";
@@ -7138,7 +7137,7 @@ textarea {
 .select-box::before,
 .select-menu::before {
   content: "";
-  font-family: "Wolmart";
+  font-family: "";
   font-size: 9px;
   font-weight: 600;
   line-height: 1;
@@ -7461,7 +7460,7 @@ textarea {
 
 .icon-angle-left,
 .icon-angle-right {
-  font-family: "wolmart";
+  font-family: "";
   font-style: normal;
 }
 
@@ -8373,7 +8372,7 @@ textarea {
 .ratings-full,
 .ratings {
   position: relative;
-  font-family: "wolmart";
+  font-family: "";
   letter-spacing: 0.2em;
 }
 
@@ -8662,7 +8661,7 @@ textarea {
   left: 0;
   top: 1px;
   content: "";
-  font-family: "wolmart";
+  font-family: "";
   font-weight: 700;
 }
 .product-list .btn-product {
@@ -8795,7 +8794,7 @@ textarea {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
-  font-family: "wolmart";
+  font-family: "";
   border: 0;
   opacity: 0.5;
   right: 10%;
@@ -9232,7 +9231,7 @@ body .product-popup {
   display: inline-block;
   border-radius: 50%;
   width: 2em;
-  color: var(--wolmart-body-color, #666);
+  color: var(---body-color, #666);
   border: 1px solid #eee;
   line-height: calc(2em - 2px);
   text-align: center;
@@ -9479,7 +9478,7 @@ body .product-popup {
   left: 0;
   height: 14px;
   line-height: 1;
-  font-family: "wolmart";
+  font-family: "";
   text-indent: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -10521,7 +10520,7 @@ body .product-popup {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     right: 0.9rem;
-    font-family: "wolmart";
+    font-family: "";
     content: "";
     font-size: 1.1rem;
     font-weight: 600;
@@ -10811,6 +10810,7 @@ body .product-popup {
 
   .shop-sidebar.sidebar-fixed .sidebar-content {
     padding: 0 0 2rem;
+    padding: 20px;
   }
 
   .sidebar-fixed .sidebar-toggle,
@@ -11818,11 +11818,10 @@ body .product-popup {
   .title-link-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+            justify-content: space-between;
   }
   .title-link-wrapper .title-link {
     margin-bottom: 2rem;
@@ -13575,9 +13574,6 @@ body .product-popup {
   line-height: 1.5;
 }
 
-.toolbox-right {
-  margin-left: auto;
-}
 
 .toolbox {
   padding-bottom: 1rem;
@@ -13757,9 +13753,7 @@ body .product-popup {
   .toolbox .left-sidebar-toggle i {
     margin: 0;
   }
-  .toolbox .left-sidebar-toggle span {
-    display: none;
-  }
+
 }
 @media (max-width: 479px) {
   .shop-default-banner {
@@ -15360,13 +15354,13 @@ body .product-popup {
   margin-bottom: -2px;
   padding: 1rem;
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--main-color);
   border-bottom: 2px solid;
 }
 .mobile-menu-container .nav-item.show .nav-link,
 .mobile-menu-container .nav-item .nav-link.active {
-  color: var(--main-color);
-  border-color: var(--main-color);
+  color: white;
+  border-color: white;
 }
 .mobile-menu-container.scrollable::-webkit-scrollbar-thumb, .mobile-menu-container .sidebar-content::-webkit-scrollbar-thumb {
   margin-right: 2px;
@@ -15517,17 +15511,16 @@ body .product-popup {
   opacity: 0.6;
 }
 .toggle-btn::before {
-  content: "";
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  font-family: "wolmart";
-  line-height: 1;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  display: inline-block;
+  margin-left: 6px;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  font-weight: 900;
+  color: white;
+  transition: 200ms ease-out;
 }
+
 .show > a .toggle-btn::before {
   -webkit-transform: rotate(630deg);
           transform: rotate(630deg);
@@ -16880,3 +16873,201 @@ a{
   border-radius: 999px;
 }
 
+.shop-content .main-content{
+  background: white;
+  padding: 20px;
+}
+
+.toolbox-item .nice-select{
+  height: fit-content;
+  padding-top: 0px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-500{
+  font-weight: 500;
+}
+
+.product-price .btn-outline-green {
+  background: unset;
+  border: 1px solid var(--main-color);
+  color: var(--main-color) !important;
+  transition: 200ms ease-out;
+}
+
+.product:hover .product-price .btn-outline-green{
+  background-color: var(--main-color);
+  color: white !important;
+}
+
+.product_verification{
+  position: absolute;
+  top: 13px;
+  background: var(--main-color);
+  margin: auto;
+  padding: 0;
+  color: white;
+  left: 13px;
+}
+
+.product_verification p{
+  margin: 0;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.product-name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5;
+  max-height: 40px;
+  white-space: initial;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+}
+
+
+
+.mobile-menu-toggle img{
+  width: 20px;
+  margin-top: 12px;
+}
+
+.mb-toolbar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 500;
+  background: white;
+  padding: 0px 15px;
+  padding-top: 7px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  border: 1px solid #eee;
+}
+
+.mb-toolbar .toolbar-grid {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.mb-toolbar .toolbar-grid li {
+  text-align: center;
+}
+
+
+
+.mb-toolbar .toolbar-grid li a i {
+  font-size: 20px;
+  color: #00917C;
+}
+
+.mb-toolbar .toolbar-grid li a {
+  color: #00917C;
+}
+
+.m-0{
+  margin: 0;
+}
+
+.stick_footer{
+  display: none;
+}
+
+.r90{
+  transform: rotate(90deg);
+}
+
+@media(max-width:600px){
+  .mb-7{
+    margin-bottom: 0 !important;
+  }
+  .swiper-pagination {
+   margin-top: 0;
+}
+.mt-sm-2{
+  margin-top: 2rem;
+}
+.mt-6{
+  margin-top: 1.5rem !important;
+}
+.icon-box p {
+  font-size: 1.1rem;
+}
+.mb-10 {
+  margin-bottom: 2rem !important;
+}
+.title-link-wrapper .title {
+  font-size: 14px;
+}
+.btn-outline-green {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mproducts .swiper-slide{
+  margin-bottom: 0 !important;
+}
+.products_with_image{
+  margin-top: 30px;
+}
+.products_with_image .col-lg-3 img{
+  height: 100% !important;
+  width: 100%;
+}
+.ads{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.quotes_section .ml-30{
+  margin: 0;
+}
+.quotes_section{
+  height: 100%;
+  margin-bottom: 40px;
+}
+.quotes_section form {
+  margin-top: 60px;
+}
+.quotes_section .col-lg-6{
+  margin-top: 20px;
+}
+.header-middle .logo {
+  margin: 0;
+  margin-left: 20px;
+}
+.stick_footer{
+  display: block;
+}
+.d-sm-none{
+  display: none;
+}
+.shop-default-category {
+  padding-bottom: 0;
+}
+.category img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.toolbox-right{
+  width: 100%;
+  justify-content: space-between;
+}
+.shop-default-category{
+  margin-bottom: 1rem !important;
+}
+}
