@@ -99,9 +99,7 @@
    font-size: 1.4rem;
  }
  
- .btn:not(.bs-btn) {
-   border: none;
- }
+
  
  .theme-light .btn:not(.bs-btn) {
    color: #4b5b6b;
@@ -580,7 +578,7 @@
  }
  
  .table tr .btn:hover {
-   color: #fff;
+   color: #fff !important;
    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
  }
@@ -722,7 +720,7 @@
  }
  
  .custom-breadcrumb h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
    font-weight: 500;
    line-height: 3rem;
    margin-bottom: 0;
@@ -782,7 +780,7 @@
  /**
  * Select Box
  */
- .select-box {
+ /* .select-box {
    background-color: transparent;
    border-radius: .4rem;
    cursor: pointer;
@@ -794,7 +792,7 @@
    max-width: 14.5rem;
    width: 100%;
  }
- 
+  */
  .theme-light .select-box {
    color: #7d7d7d;
    border: 1px solid #dee1e5;
@@ -1083,10 +1081,10 @@
    background-color: #222a43;
  }
  
- .scrollable {
+ /* .scrollable {
    max-height: 400px;
    overflow-y: scroll;
- }
+ } */
  
  .theme-light label {
    color: #3d4859;
@@ -1100,7 +1098,6 @@
    background-color: transparent;
    padding: 1rem;
    font-size: 1.3rem;
-   height: auto;
  }
  
  .theme-light .form-control {
@@ -1642,7 +1639,7 @@
  
  @media (min-width: 1200px) and (max-width: 1800px) {
    .page-container {
-     max-width: calc(100% - (28.5rem + 15px));
+     max-width: calc(100% - (30.5rem + 15px));
      left: 0;
    }
    .page-container .container {
@@ -1656,7 +1653,7 @@
  
  @media screen and (max-width: 1440px) {
    .page-container {
-     max-width: calc(100% - (22.5rem + 15px));
+     max-width: calc(100% - (30.5rem + 15px));
    }
  }
  
@@ -1683,9 +1680,7 @@
    z-index: 99;
  }
  
- .header {
-   padding: .5rem 0;
- }
+
  
  .theme-light .header {
    background-color: #fff;
@@ -1706,19 +1701,7 @@
    font-size: 2.4rem;
  }
  
- .header .header-search {
-   position: relative;
-   max-width: 28rem;
-   margin-left: 4.5rem;
-   width: 100%;
- }
- 
- @media screen and (max-width: 991px) {
-   .header .header-search {
-     max-width: 22rem;
-     margin-left: 2.5rem;
-   }
- }
+
  
  /**
  * Sidebar Main
@@ -1790,6 +1773,7 @@
  
  .theme-light .sidebar-main .nav-item > a {
    color: #4b5b6b;
+   font-weight: normal;
  }
  
  .theme-dark .sidebar-main .nav-item > a {
@@ -2208,12 +2192,12 @@
  /**
  * Widget 
  */
- .widget {
+ /* .widget {
    position: relative;
    padding: 2.5rem 3rem;
    margin-bottom: 3rem;
  }
- 
+  */
  .theme-light .widget {
    background-color: #fff;
    -webkit-box-shadow: 0 5px 12px rgba(126, 142, 177, 0.2);
@@ -2950,7 +2934,7 @@
  }
  
  .products .table .btn:hover {
-    background: #00917cad;
+    background: #00917cad !important;
  }
  
  .products .scrollable {
@@ -3156,15 +3140,19 @@
  .addnew-btn {
    padding: 1rem 1.5rem;
    font-size: 1.4rem;
-   border-radius: 50px;
-   width: 41px;
-   height: 41px;
+   border-radius: 50px !important;
+   width: 41px !important;
+   height: 41px !important;
    text-align: center;
-   -webkit-transition: all 300ms ease-in-out;
-   transition: all 300ms ease-in-out;
+   -webkit-transition: all 300ms ease-in-out !important;
+   transition: all 300ms ease-in-out !important;
    position: relative;
    overflow: hidden;
    white-space: nowrap;
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+   border: none !important;
  }
  
  .addnew-btn span {
@@ -3178,7 +3166,7 @@
  }
  
  .addnew-btn:hover {
-   width: 160px;
+   width: 160px !important;
  }
  
  .addnew-btn:hover span {
@@ -6563,7 +6551,7 @@
 }
 
 .addnew-btn{
-    background: #00917cad;
+    background: #00917cad !important;
 }
 
 .btn-outline-green{
@@ -6633,12 +6621,12 @@
   margin-left: 18px;
 }
 
-.swiper-slide img{
+.modal-content .swiper-slide img{
   height: 500px;
   object-fit: cover;
 }
 
-.swiper {
+.modal-content .swiper {
   height: 500px;
 }
 
@@ -6820,7 +6808,7 @@
   display: none;
 }
 .custom-breadcrumb h3 {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   font-weight: 500;
   line-height: 3rem;
   margin-bottom: 0;
@@ -6844,3 +6832,31 @@
 
 /*homepage*/
 
+.products table a{
+  color: #4b5b6b !important;
+  background: unset !important;
+  border: 1px solid #00917cad !important;
+  width: fit-content;
+  line-height: 1.5 !important;
+  border-radius: 0.25rem !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+}
+
+.side_bar{
+  padding: 0;
+}
+
+.side_bar .nav-item:not(:last-child) {
+  margin-right: 0; 
+}
+
+.modal-content .container-fluid{
+  padding-left: 0 !important;
+}
+
+.btn-outline-green{
+  padding: 10px;
+}
