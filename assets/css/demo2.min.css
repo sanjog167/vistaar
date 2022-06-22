@@ -10548,12 +10548,13 @@ body .product-popup {
   padding: 0 2rem;
   border-radius: 0.5rem;
   border: 1px solid #eee;
+  padding-bottom: 1.5rem;
 }
 .widget-icon-box .icon-box-side {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  padding: 2rem 0;
+  padding: 4.5rem 0 2rem;
 }
 .widget-icon-box .icon-box-side:not(:last-child) {
   border-bottom: 1px solid #eee;

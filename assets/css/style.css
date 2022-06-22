@@ -19,6 +19,7 @@
  
  html {
    font-size: 62.5%;
+   scroll-behavior: smooth;
  }
  
  body {
@@ -26,6 +27,7 @@
    font-weight: 400;
    font-size: 1.3rem;
    line-height: 2.4rem;
+   scroll-behavior: smooth;
  }
 
  :root {
@@ -6858,5 +6860,136 @@
 }
 
 .btn-outline-green{
+  padding: 10px;
+}
+
+.product-sku{
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  text-align: center;
+}
+
+.list-type-check li::before {
+
+
+  display: inline-block;
+  margin-left: 6px;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  font-weight: 900;
+  transition: 200ms ease-out;
+  margin-top: 3px;
+}
+
+.btn-border-green{
+  background-color: unset !important;
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+  margin-left: 10px;
+  transition: 200ms ease-out;
+}
+
+.btn-border-green:hover{
+  background-color: var(--main-color) !important;
+  color: white !important; 
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: none;
+}
+
+.avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.widget-icon-box svg{
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 100%;
+  transform: rotate(180deg);
+  bottom: 0;
+  z-index: -1;
+}
+
+.verification{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+}
+
+.verification img{
+  width: 30px;
+}
+
+.vmore{
+  color: var(--main-color);
+  text-decoration: underline;
+  display: flex;
+  justify-content: end;
+  transition: 200ms ease-out;
+}
+
+.vmore:hover{
+  color: #025955;
+}
+
+.vendor-name a, .store-phone a{
+color: var(--main-color);
+}
+
+.justify-left{
+  justify-content: left;
+}
+
+#product-tab-vendor td {
+  border: 1px solid #f4f4f4;
+  font-size: 12px;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+#product-tab-vendor th {
+  border-top: 1px solid #f4f4f4;
+}
+
+#product-tab-vendor tr th:first-child, #product-tab-vendor tr td:nth-child(3){
+  background-color: #fafafa;
+}
+
+#product-tab-vendor tr td:nth-child(3){
+  font-weight: bold;
+}
+
+#product-tab-vendor tr td a{
+  font-weight: 500;
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.verification .dropdown-box{
+  background: black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 90px !important;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+
+.verification .dropdown-box p{
+  color: white;
+  margin: auto;
+}
+
+.product-short-desc{
+  background: #fafafa;
   padding: 10px;
 }
