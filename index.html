@@ -2276,17 +2276,212 @@
     </div>
     <!-- End of Quick view -->
 
+    <link rel="stylesheet" href="https://widget-snippet.herokuapp.com/emoji/css/emoji.css" />
+<style>
+    /* General Styles
+--------------------------------------------------------------------------------------*/
+
+    @font-face {
+        font-family: 'GT Walsheim Medium';
+        font-weight: 600;
+        font-style: normal;
+        src: url('https://assets.swoogo.com/custom-font/2583.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'GT Walsheim Regular';
+        font-weight: 400;
+        font-style: normal;
+        src: url('https://assets.swoogo.com/custom-font/1205.otf') format('opentype'), url('https://assets.swoogo.com/custom-font/2582.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'GT Walsheim Bold';
+        font-weight: 700;
+        font-style: normal;
+        src: url('https://assets.swoogo.com/custom-font/2585.ttf') format('truetype');
+    }
+
+    .emoji-collection.text-center {
+        max-width: 524px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        right: 0;
+        margin: 0 auto;
+        bottom: 27px;
+    }
+
+    .emoji-name {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        font-family: 'GT Walsheim Medium';
+        margin-right: -2px;
+    }
+
+    .bouncy {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    button.addemoji,
+    button.addemoji:focus {
+        width: auto;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background: #ffffff00;
+        text-align: center;
+        box-shadow: none;
+        transition: all .2s ease-in-out;
+    }
+
+    button.addemoji:hover,
+    button.addemoji.button_click,
+    button.addemoji:active {
+        transform: scale(1.1);
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    button.emoji1 {
+        border-color: #ff7d1e;
+    }
+
+    button.emoji2 {
+        border-color: #e92841;
+    }
+
+    button.emoji3 {
+        border-color: #ffffff;
+    }
+
+    button.emoji4 {
+        border-color: #00a7b5;
+    }
+
+    button.emoji5 {
+        border-color: #9bd732;
+    }
+
+    button.addemoji {
+        border-color: #9bd73200;
+    }
+
+    button.addemoji:first-child {
+        margin-left: 0;
+    }
+
+    button.addemoji:last-child {
+        margin-right: 0;
+    }
+
+    .emoji.single img {
+        height: 100%;
+    }
+
+    .emoji.single .emoji-name {
+        display: none;
+    }
+
+    .emoji-bg {
+        background: none;
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .emoji-collection .addemoji img {
+        width: 60px !important;
+    }
+
+
+    @media screen and (min-width: 1800px) {
+        .emoji-collection .addemoji img {
+            width: 60px !important;
+        }
+    }
+
+    @media screen and (min-width: 770px) {
+
+        button.addemoji,
+        button.addemoji:focus {
+            margin: 0 0px !important;
+        }
+
+        .emoji-collection .addemoji img {
+            width: 50px !important;
+        }
+
+
+    }
+
+    @media screen and (max-width: 480px) {
+        .emoji-name {
+            font-size: 12px;
+        }
+.emoji-collection .addemoji img {
+    width: 38px !important;
+}
+        button.addemoji,
+        button.addemoji:focus {
+            margin: 0 5px !important;
+        }
+
+    }
+</style>
+
+<div id="main-emoji-Body">
+    <div class="emoji-bg" data-emoji-bg> 
+        <div id="bouncers"></div>
+        <div class="emoji-collection text-center">
+            <button class="addemoji emoji1">
+                <img src="https://assets.swoogo.com/uploads/medium/1890073-62b478b9384df.png" data-image1 />
+                
+            </button>
+            <button class=" addemoji emoji2">
+                <img src="https://assets.swoogo.com/uploads/medium/1890074-62b478b9375ee.png" data-image2 />
+                
+            </button>
+            <button class="addemoji emoji3">
+                <img src="https://assets.swoogo.com/uploads/medium/1890072-62b478b938e77.png" data-image3 />
+                
+            </button>
+            <button class="addemoji emoji4">
+                <img src="https://assets.swoogo.com/uploads/medium/1890071-62b478b8e0cae.png" data-image4 />
+              
+            </button>
+  
+        </div>
+    </div>
+</div>
+<script>    let value = '6268133d389b5d0d33c5a21a'; let bouncyHeight = 200; let bouncyWidth = 360;</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://widget-snippet.herokuapp.com/emoji/js/forHosting.js"></script>
+
     <!-- Plugin JS File -->
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery.plugin/jquery.plugin.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/jquery.countdown/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendor/floating-parallax/parallax.min.js"></script>
+    <script src="assets/vendor/zoom/jquery.zoom.js"></script>
+    <script src="assets/vendor/niceselect.js"></script>
+
     <script src="assets/js/datatable.js"></script>
     <script src="assets/js/apexchart.js"></script>
     <script src="assets/js/chartoption.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/lunar.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 
     <!-- Main Js -->
