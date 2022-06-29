@@ -7176,6 +7176,10 @@ color: var(--main-color);
   color: orange;
 }
 
+.terms span{
+  font-weight: 600;
+}
+
 @media(max-width:600px){
   .profile{
     padding-top: 0;
