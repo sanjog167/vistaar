@@ -49,3 +49,7 @@
     border: 1px  solid #ddd;
     
 }
+
+.footer-newsletter{
+    background-color: var(--main-color) !important;
+}
