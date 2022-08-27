@@ -7212,3 +7212,36 @@ color: var(--main-color);
   transform: scale(1) translateY(0);
   z-index: 999;
 }
+
+.bg-black{
+  background-color: #222;
+}
+
+#demoModaltwo .bestprice{
+  background: var(--main-color);
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#demoModaltwo .form-group{
+  margin-bottom: 10px;
+}
+
+.margin-auto{
+  margin: auto;
+}
+
+#demoModalthree table tr th, #demoModalthree table tr td{
+  padding: 10px !important;
+}
+
+#demoModalthree table tr th{
+  color: var(--main-color);
+}

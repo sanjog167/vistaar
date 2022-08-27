@@ -15577,7 +15577,7 @@ body .product-popup {
   right: 0.5rem;
 }
 .category-menu .megamenu {
-  min-width: 68.5rem;
+  min-width: 22.5rem;
 }
 .category-menu .megamenu > li:not(:last-child) {
   padding: 2.8rem 2rem 0 0rem;
@@ -17101,4 +17101,12 @@ flex-wrap: wrap;
 
 .widget .widget-title {
   padding-bottom: 0.9rem !important;
+}
+
+footer a, footer p, footer h3, footer h6, footer span, footer h4{
+  color: white !important;
+}
+
+.footer{
+  padding-bottom: 0 !important;
 }
