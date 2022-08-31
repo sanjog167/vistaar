@@ -7245,3 +7245,41 @@ color: var(--main-color);
 #demoModalthree table tr th{
   color: var(--main-color);
 }
+
+.product-media img{
+  height: 250px;
+  object-fit:cover !important;
+}
+
+.viewed-products .product-media img{
+  object-fit: cover;
+    height: 150px;
+}
+
+footer .social-icon::before{
+  display: none;
+}
+
+/*august 31*/
+.remove-selected span{
+  margin-right: -18px;
+  margin-top: 2px;
+}
+
+.remove-selected:hover span {
+  margin-right: 10px !important;
+}
+
+.remove-selected{
+  display: none !important;
+}
+
+.d-block{
+  display: block !important;
+}
+
+.remove-selected{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
